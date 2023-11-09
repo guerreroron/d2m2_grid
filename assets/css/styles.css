@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    /* outline: 1px dotted rgb(153, 65, 109); */
+}
+
+header {
+    grid-area: header;
+    height: 3.5rem;
+    background-color: #160C28; 
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 30px;
+    line-height: 2.2;
+    color:#E1EFE6;
+    min-width: 160px;
+}
+
+span{
+    font-weight: bold;
+    font-size: large;
+}
+
+.category-ofer {
+    padding-bottom: 10px;
+}
+
+.category-ofer a {
+    border: 1px solid #ac9794;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.category-ofer a:link {
+    color: #000411;
+}
+
+.category-ofer a:hover {
+    background-color: #E1EFE6;
+}
+
+
+.category a:link {
+    text-decoration: none;
+    color: #000411;
+}
+
+.category a:hover {
+    color: #3d3057;
+}
+
+.category a:active {
+    color: white;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    height: 3.5rem;
+    background-color: #E1EFE6;
+    color: #93827F;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: minmax(17em, 18em) 1fr;
+    grid-template-rows: 4em 1fr 4em;
+    grid-template-areas: 
+    "header header header header header"
+    "aside main main main main"
+    "footer footer footer footer footer";
+    gap: 20px;
+    background-color: #93827F;
+}
+
+.card {
+    background-color: #E1EFE6;
+    width: fit-content;
+    box-shadow: 3px 3px 9px rgb(66, 66, 66);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title h4 {
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2;
+    text-align: center;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+}
+
+.price {
+    padding-bottom: 10px;
+}
+
+.img-card img {
+    max-width: 290px;
+    max-height: 300px;
+}
+
+.card-foot {
+    height: 3rem;
+    background-color: #160C28;
+    color:white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card-foot:hover {
+    background-color: #2b174e;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 25px;
+
+}
